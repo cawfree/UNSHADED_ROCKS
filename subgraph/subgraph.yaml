@@ -1,0 +1,39 @@
+specVersion: 0.0.5
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Rocks721
+    network: mainnet
+    source:
+      address: "0xfda1d24E927f8DA58f86F653E976cb1F7e6CC9b7"
+      abi: Rocks721
+      startBlock: 13745557
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Approval
+        - ApprovalForAll
+        - MetadataUpdated
+        - OwnershipTransferred
+        - Purchase
+        - Transfer
+      abis:
+        - name: Rocks721
+          file: ./abis/Rocks721.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: MetadataUpdated(string)
+          handler: handleMetadataUpdated
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: Purchase(address,uint256,uint256[])
+          handler: handlePurchase
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ./src/rocks-721.ts

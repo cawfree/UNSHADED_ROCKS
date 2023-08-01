@@ -1,0 +1,1 @@
+export const NAVIGATOR_TRANSITION_DELAY = 500;

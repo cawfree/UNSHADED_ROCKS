@@ -1,0 +1,1 @@
+export const STATISTIC_ADDRESS_LENGTH = 10;

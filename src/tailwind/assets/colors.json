@@ -1,0 +1,10 @@
+{
+  "primary": "#FF0000",
+  "dead": "#4B00A0",
+  "secondary": "#888888",
+  "accent": "#FFFFFF",
+  "background": "#D1D1D1",
+  "secondary-darker": "#666666",
+  "gallery-black": "rgb(20, 20, 20)",
+  "gallery-white": "rgb(249, 249, 249)"
+}

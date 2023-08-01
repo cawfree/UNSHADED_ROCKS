@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'LetterformVariations00';
+  src: url('/LetterformVariations00GX.woff2') format('woff2'),
+       url('/LetterformVariations00GX.woff') format('woff'),
+       url('/LetterformVariations00GX.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'LetterformVariations01';
+  src: url('/LetterformVariations01IRGX.woff2') format('woff2'),
+       url('/LetterformVariations01IRGX.woff') format('woff'),
+       url('/LetterformVariations01IRGX.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DiatypeProgrammFinal';
+    src: url('/DiatypeProgrammFinal.woff2') format('woff2'),
+         url('/DiatypeProgrammFinal.woff') format('woff'),
+         url('/DiatypeProgrammFinal.ttf') format('truetype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input::placeholder {
+    color: lightgray; /* Set your desired color here */
+}
+
+/*model-viewer {*/
+/*  --progress-bar-color: transparent;*/
+/*}*/
+/* TODO: idiomatic tailwind */
+.letterform-regular {
+  font-variation-settings: "wdth" 100;
+}
+
+/* TODO: idiomatic tailwind */
+.letterform-bold {
+  font-variation-settings: "wdth" 200;
+}
+
+.letterform-vertical-rl {
+  writing-mode: vertical-rl;
+}
+
+.TheyEmbodyTheEssenceOfAnObjectExistingBetweenTheRealmOfManufacturedAndNaturalEntities {
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+body {
+  text-decoration-thickness: 3px;
+}
+
+input:focus {
+  outline: none;
+}
+

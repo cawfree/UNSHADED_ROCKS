@@ -1,0 +1,17 @@
+diff --git a/node_modules/react-infinite-scroll-component/dist/index.es.js b/node_modules/react-infinite-scroll-component/dist/index.es.js
+index 628595f..1b26939 100644
+--- a/node_modules/react-infinite-scroll-component/dist/index.es.js
++++ b/node_modules/react-infinite-scroll-component/dist/index.es.js
+@@ -411,7 +411,11 @@ var InfiniteScroll = /** @class */ (function (_super) {
+     };
+     InfiniteScroll.prototype.render = function () {
+         var _this = this;
+-        var style = __assign({ height: this.props.height || 'auto', overflow: 'auto', WebkitOverflowScrolling: 'touch' }, this.props.style);
++        var style = __assign({
++            //height: this.props.height || 'auto',
++            //overflow: 'auto',
++            //WebkitOverflowScrolling: 'touch'
++        }, this.props.style);
+         var hasChildren = this.props.hasChildren ||
+             !!(this.props.children &&
+                 this.props.children instanceof Array &&
