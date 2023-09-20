@@ -44,19 +44,19 @@
 
   <body class="h-screen bg-background overflow-hidden">
     <div id="root"></div>
-<!--    &lt;!&ndash; https://github.com/rafgraph/spa-github-pages/blob/4b898016074be230db5196111c7b3ad866914764/index.html#L20C5-L43C51 &ndash;&gt;-->
-<!--    <script type="text/javascript">-->
-<!--      (function(l) {-->
-<!--        if (l.search[1] === '/' ) {-->
-<!--          var decoded = l.search.slice(1).split('&').map(function(s) {-->
-<!--            return s.replace(/~and~/g, '&')-->
-<!--          }).join('?');-->
-<!--          window.history.replaceState(null, null,-->
-<!--                  l.pathname.slice(0, -1) + decoded + l.hash-->
-<!--          );-->
-<!--        }-->
-<!--      }(window.location))-->
-<!--    </script>-->
+    <!-- https://github.com/rafgraph/spa-github-pages/blob/4b898016074be230db5196111c7b3ad866914764/index.html#L20C5-L43C51 -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+                  l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
     
   </body>
